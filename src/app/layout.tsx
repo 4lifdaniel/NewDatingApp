@@ -29,9 +29,10 @@ export default function RootLayout({
       <body>
       
         <Providers>
+          <h1>j</h1>
           {children}
         </Providers>
-      
+  
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ import TopNavBar from "./components/navbar/TopNav";
 export default function Home() {
   return (
 <div>
-  <TopNavBar></TopNavBar>
+  {/* <TopNavBar></TopNavBar> */}
     <h1>This is homepage</h1>
     <Button
     as={Link}
