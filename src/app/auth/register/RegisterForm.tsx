@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Button, Card, CardBody, CardHeader, Input } from "@heroui/react";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import {registerSchema, RegisterSchema} from "@/lib/schemas/RegisterSchema"
 import { zodResolver} from "@hookform/resolvers/zod"
 
