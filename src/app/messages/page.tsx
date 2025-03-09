@@ -3,12 +3,11 @@ import TopNavBar from "../components/navbar/TopNav";
 
 export default function MessagePage() {
     return (
-        <div>
+        <div className="bg-white">
 
-            <TopNavBar>
-            </TopNavBar>
+            <TopNavBar/>
 
-            <h1>This is meessage page</h1>
+            <h1 className="text-neutral-900">This is meessage page</h1>
         </div>
     )
 

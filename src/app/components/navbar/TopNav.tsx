@@ -4,43 +4,43 @@ import {
   NavbarBrand,
   NavbarContent,
   Button,
-  NavbarItem,
 } from "@heroui/react";
 import Link from "next/link";
 import NavLink from "../NavLink";
+import Image from "next/image";
 
 export default function TopNavBar() {
   return (
     <Navbar
       maxWidth="full"
-      className="bg-blue-600"
+      className="bg-blue-600 h-35"
       classNames={{
-        item: [
-          "text-xl",
-          "text-white",
-          "uppercase",
-          "data-[active=true]:text-yellow-100",
-        ],
+        item: ["text-xl", "text-white", "data-[active=true]:text-yellow-100"],
       }}
     >
       <NavbarBrand as={Link} href="/">
-        <div> PUT LOGO HERE </div>
+      <Image 
+          src="/cupidle.png" 
+          alt="Cupidle Logo"
+          width={200} 
+          height={50} 
+          className="object-contain"
+        />
       </NavbarBrand>
 
-      <NavbarContent>
-
-        <NavLink
-        href="/members"
-        label="Matches"/>
-        <NavbarItem as={Link} href="/lists">
+      <div className="sm-flex">
+      <NavbarContent >
+        <NavLink href="/members" label="Matches" />
+        <NavLink href="/lists" label="Lists" />
+        <NavLink href="/messages" label="Messages" />
+        {/* <NavbarItem as={Link} href="/lists">
           Lists
         </NavbarItem>
         <NavbarItem as={Link} href="/messages">
           Messages
-        </NavbarItem>
+        </NavbarItem> */}
 
-
-<Button as={Link} href="/auth/login">
+        <Button as={Link} href="/auth/login">
           Login
         </Button>
 
@@ -48,6 +48,7 @@ export default function TopNavBar() {
           Register
         </Button>
       </NavbarContent>
+      </div>
     </Navbar>
   );
 }

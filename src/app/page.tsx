@@ -6,14 +6,15 @@ import TopNavBar from "./components/navbar/TopNav";
 
 export default function Home() {
   return (
-<div >
+<div className="bg-gray-300 text-neutral-900"  >
   <TopNavBar/>
   <div className="flex flex-col items-center justify-center min-h-screen">
-  <p className="font-bold text-4xl tracking-wide">Hi, Welcome to MatchMe!</p>
-    <Button className="mt-5 font-bold"
+  <h1 className="font-medium text-4xl tracking-wide">Welcome to Cupidle</h1>
+  <h2 className="italic">New era of match-making</h2>
+    <Button className="mt-5 font-bold bg-white"
     as={Link}
     href="/members"
-    > Click to Start 
+    > Find your date 
     </Button>
 
   </div>
